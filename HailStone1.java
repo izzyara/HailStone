@@ -1,22 +1,21 @@
 
-import java.util.*;
-public class hailStone{
+public class HailStone1{
 
     public static void main (String[]args){
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        hailStoneAlg(number);
-    
-        scanner.close();
 
-    }
 
+        for(int x=1; x<=200; x++){
+            hailStoneAlg(x);
+        }
     
+    
+        }
+
 
     public static void hailStoneAlg(int num){
         System.out.print(num + " ");
         if (num==1){
-
+            System.out.print("\n");
         }else if(num%2 ==0){
             hailStoneAlg(num/2);
         }else{
@@ -24,6 +23,7 @@ public class hailStone{
         }
 
     }
+
 
 
     
